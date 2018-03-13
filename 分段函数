@@ -1,0 +1,29 @@
+x=int(input('please a number:'))
+def f(x):
+    if(x<0):
+        y=0
+    elif(x<5):
+        y=x
+    elif(x<10):
+        y=3*x-5
+    elif(x<20):
+        y=0.5*x-2
+    else:
+        y=0
+    return y
+print(f(x))
+
+
+
+x=int(input())
+y=int()
+if(x<0):
+    print('y=',0)
+elif(x<5):
+    print('y=',x)
+elif(x<10):
+    print('y=',3*x-5)
+elif(x<20):
+    print('y=',0.5*x-2)
+else:
+    print('y=',0)
