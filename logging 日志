@@ -36,8 +36,11 @@ def get_user_input(name):
     # Later on in the 'exceptions' chapter, we will learn how to modify
     # this code to not crash the game if the user types in something that
     # isn't a valid number.
+      try:
         psi = float(input(name + " charge the gun with how many psi? "))
         angle = float(input(name + " move the gun at what angle? "))
+       except ValueError:
+         logging.debug("This is a error")
     return psi, angle
     
     
