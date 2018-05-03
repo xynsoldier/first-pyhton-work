@@ -31,7 +31,7 @@ def get_user_input(name):
     psi = None
     angle = None
 
-    while psi is None and angle is None:
+    while psi is None or angle is None:
         try:
             psi = float(input(name + " charge the gun with how many psi? "))
             angle = float(input(name + " move the gun at what angle? "))
